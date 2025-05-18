@@ -7,14 +7,14 @@ Resources:
     Properties:
       DBInstanceIdentifier: my-mssql-instance
       AllocatedStorage: 20
-      DBInstanceClass: db.t3.medium
+      DBInstanceClass: db.t3.micro
       Engine: sqlserver-ex
       MasterUsername: adminuser
       MasterUserPassword: YourStrongPassword123
       PubliclyAccessible: true
-      DBSubnetGroupName: default-vpc-0ee588f259ac3df35
+      DBSubnetGroupName: default-vpc-0ad8852ed8e2c84d9
       VPCSecurityGroups:
-        - sg-070189eb356588ca0  # Replace with your actual SG ID
+        - sg-0fb73d4745d7b1eb6  # Replace with your actual SG ID
       BackupRetentionPeriod: 7
       EngineVersion: 15.00.4390.2.v1
       LicenseModel: license-included
