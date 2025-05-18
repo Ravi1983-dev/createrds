@@ -1,0 +1,22 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Create MSSQL RDS Instance
+
+Resources:
+  RDSInstance:
+    Type: AWS::RDS::DBInstance
+    Properties:
+      DBInstanceIdentifier: my-mssql-instance
+      AllocatedStorage: 20
+      DBInstanceClass: db.t3.medium
+      Engine: sqlserver-ex
+      MasterUsername: adminuser
+      MasterUserPassword: YourStrongPassword123
+      PubliclyAccessible: true
+      DBSubnetGroupName: default-vpc-0ee588f259ac3df35
+      VPCSecurityGroups:
+        - sg-070189eb356588ca0  # Replace with your actual SG ID
+      BackupRetentionPeriod: 7
+      EngineVersion: 15.00.4390.2.v1
+      LicenseModel: license-included
+      multi_az: false
+      region: us-east-2
