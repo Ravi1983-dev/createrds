@@ -24,4 +24,3 @@ Resources:
       BackupRetentionPeriod: 7
       EngineVersion: 15.00.4390.2.v1
       LicenseModel: license-included
-      multi_az: false
