@@ -1,3 +1,4 @@
+//us-east-1
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Create MSSQL RDS Instance
 
@@ -11,9 +12,9 @@ Resources:
       MasterUsername: adminuser
       MasterUserPassword: YourStrongPassword123
       PubliclyAccessible: true
-      DBSubnetGroupName: default-vpc-0ee588f259ac3df35
+      DBSubnetGroupName: default-vpc-0a33dd853c9acdab7
       VPCSecurityGroups:
-        - sg-070189eb356588ca0  # Replace with your actual SG ID
+        - sg-02fa79a4de69aeeef  # Replace with your actual SG ID
       BackupRetentionPeriod: 7
       EngineVersion: 15.00.4390.2.v1
       LicenseModel: license-included
