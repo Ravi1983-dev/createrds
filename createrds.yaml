@@ -5,7 +5,7 @@ Resources:
   RDSInstance:
     Type: AWS::RDS::DBInstance
     Properties:
-      DBInstanceIdentifier: bdatdp02
+      DBInstanceIdentifier: bdatdp01
       AllocatedStorage: 20
       DBInstanceClass: db.t3.medium
       Engine: sqlserver-ex
